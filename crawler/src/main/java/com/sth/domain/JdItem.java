@@ -23,7 +23,7 @@ public class JdItem implements Serializable {
     private Long spu;
     private Long sku;
     private String title;
-    private Long price;
+    private Double price;
     private String pic;
     private Date createtime;
     private Date updatetime;

@@ -6,6 +6,7 @@ import com.sth.service.IJdItemService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Example;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
@@ -21,6 +22,7 @@ public class JdItemServiceImpl implements IJdItemService {
     private IJdItemDao jdItemDao;
 
     @Override
+    @Transactional
     public void save(JdItem jdItem) {
         jdItemDao.save(jdItem);
     }
